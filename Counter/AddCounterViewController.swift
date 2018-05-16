@@ -9,6 +9,13 @@
 import UIKit
 
 class AddCounterViewController: UIViewController {
+    
+    // MARK: Properties
+    
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var descText: UITextField!
+    @IBOutlet weak var countText: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +38,13 @@ class AddCounterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func saveButton(_ sender: UIBarButtonItem) {
+    }
+    
 
 }

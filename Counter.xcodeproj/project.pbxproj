@@ -14,6 +14,7 @@
 		C309D91320ABF9F100982658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C309D91120ABF9F100982658 /* LaunchScreen.storyboard */; };
 		C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91A20ABFA4400982658 /* AddCounterViewController.swift */; };
 		C309D91D20ABFAF900982658 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */; };
+		C309D92420AC07AA00982658 /* Counters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C309D92220AC07AA00982658 /* Counters.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C309D91420ABF9F100982658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C309D91A20ABFA4400982658 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
 		C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTableViewCell.swift; sourceTree = "<group>"; };
+		C309D92320AC07AA00982658 /* Counters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Counters.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		C309D8FC20ABF9F000982658 = {
 			isa = PBXGroup;
 			children = (
+				C309D91E20AC03CF00982658 /* CoreData */,
 				C309D90720ABF9F100982658 /* Counter */,
 				C309D90620ABF9F100982658 /* Products */,
 			);
@@ -68,6 +71,14 @@
 				C309D91420ABF9F100982658 /* Info.plist */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		C309D91E20AC03CF00982658 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C309D92220AC07AA00982658 /* Counters.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				C309D90B20ABF9F100982658 /* ViewController.swift in Sources */,
 				C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */,
 				C309D90920ABF9F100982658 /* AppDelegate.swift in Sources */,
+				C309D92420AC07AA00982658 /* Counters.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +340,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C309D92220AC07AA00982658 /* Counters.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C309D92320AC07AA00982658 /* Counters.xcdatamodel */,
+			);
+			currentVersion = C309D92320AC07AA00982658 /* Counters.xcdatamodel */;
+			path = Counters.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C309D8FD20ABF9F000982658 /* Project object */;
 }

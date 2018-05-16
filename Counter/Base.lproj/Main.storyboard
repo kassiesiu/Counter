@@ -88,10 +88,56 @@
                     <view key="view" contentMode="scaleToFill" id="V4M-td-u6X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-WM-uPI">
+                                <rect key="frame" x="15" y="94" width="345" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Yp-gk-4ON">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKB-aK-97E">
+                                        <rect key="frame" x="0.0" y="45" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Count" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4B-4e-F50">
+                                        <rect key="frame" x="0.0" y="90" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t4U-WM-uPI" firstAttribute="top" secondItem="hRu-2w-f7w" secondAttribute="top" constant="30" id="etj-nG-nfd"/>
+                            <constraint firstItem="hRu-2w-f7w" firstAttribute="trailing" secondItem="t4U-WM-uPI" secondAttribute="trailing" constant="15" id="rCW-m5-oi7"/>
+                            <constraint firstItem="t4U-WM-uPI" firstAttribute="leading" secondItem="hRu-2w-f7w" secondAttribute="leading" constant="15" id="rEU-UG-XbD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hRu-2w-f7w"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LFk-oV-yAv"/>
+                    <navigationItem key="navigationItem" id="LFk-oV-yAv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rdf-5E-XeN">
+                            <connections>
+                                <action selector="cancelButton:" destination="8TD-hx-fBs" id="f9i-IJ-fKN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RBN-j0-V7A">
+                            <connections>
+                                <action selector="saveButton:" destination="8TD-hx-fBs" id="tIr-uG-mKl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countText" destination="k4B-4e-F50" id="vGd-VE-fgC"/>
+                        <outlet property="descText" destination="tKB-aK-97E" id="v6G-zU-shi"/>
+                        <outlet property="nameText" destination="8Yp-gk-4ON" id="wLq-kR-B8C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgh-5E-3C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
