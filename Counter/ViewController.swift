@@ -35,6 +35,8 @@ class ViewController: UITableViewController {
         }
         
         cell.countLabel.text = "3"
+        cell.nameLabel.text = "School end"
+        cell.descLabel.text = "School is ending!!!"
         
         return cell
         

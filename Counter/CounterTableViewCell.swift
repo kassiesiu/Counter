@@ -13,6 +13,8 @@ class CounterTableViewCell: UITableViewCell {
     // MARK: Properties
     @IBOutlet weak var countLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
