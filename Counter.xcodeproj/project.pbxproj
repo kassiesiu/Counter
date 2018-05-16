@@ -12,6 +12,7 @@
 		C309D90E20ABF9F100982658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C309D90C20ABF9F100982658 /* Main.storyboard */; };
 		C309D91020ABF9F100982658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C309D90F20ABF9F100982658 /* Assets.xcassets */; };
 		C309D91320ABF9F100982658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C309D91120ABF9F100982658 /* LaunchScreen.storyboard */; };
+		C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91A20ABFA4400982658 /* AddCounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C309D90F20ABF9F100982658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C309D91220ABF9F100982658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C309D91420ABF9F100982658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C309D91A20ABFA4400982658 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C309D90820ABF9F100982658 /* AppDelegate.swift */,
 				C309D90A20ABF9F100982658 /* ViewController.swift */,
 				C309D90C20ABF9F100982658 /* Main.storyboard */,
+				C309D91A20ABFA4400982658 /* AddCounterViewController.swift */,
 				C309D90F20ABF9F100982658 /* Assets.xcassets */,
 				C309D91120ABF9F100982658 /* LaunchScreen.storyboard */,
 				C309D91420ABF9F100982658 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C309D90B20ABF9F100982658 /* ViewController.swift in Sources */,
+				C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */,
 				C309D90920ABF9F100982658 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
