@@ -15,6 +15,7 @@
 		C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91A20ABFA4400982658 /* AddCounterViewController.swift */; };
 		C309D91D20ABFAF900982658 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */; };
 		C309D92420AC07AA00982658 /* Counter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C309D92220AC07AA00982658 /* Counter.xcdatamodeld */; };
+		C3F64B8720ACFB7500F95280 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64B8620ACFB7500F95280 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C309D91A20ABFA4400982658 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
 		C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTableViewCell.swift; sourceTree = "<group>"; };
 		C309D92320AC07AA00982658 /* Counters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Counters.xcdatamodel; sourceTree = "<group>"; };
+		C3F64B8620ACFB7500F95280 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				C309D90820ABF9F100982658 /* AppDelegate.swift */,
 				C309D90A20ABF9F100982658 /* ViewController.swift */,
 				C309D90C20ABF9F100982658 /* Main.storyboard */,
+				C3F64B8620ACFB7500F95280 /* DetailViewController.swift */,
 				C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */,
 				C309D91A20ABFA4400982658 /* AddCounterViewController.swift */,
 				C309D90F20ABF9F100982658 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				C309D91D20ABFAF900982658 /* CounterTableViewCell.swift in Sources */,
 				C309D90B20ABF9F100982658 /* ViewController.swift in Sources */,
 				C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */,
+				C3F64B8720ACFB7500F95280 /* DetailViewController.swift in Sources */,
 				C309D90920ABF9F100982658 /* AppDelegate.swift in Sources */,
 				C309D92420AC07AA00982658 /* Counter.xcdatamodeld in Sources */,
 			);

@@ -112,10 +112,9 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-VT-fnf">
-                                <rect key="frame" x="156" y="304" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-VT-fnf">
+                                <rect key="frame" x="145" y="247" width="85" height="173.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="145"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -123,8 +122,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="t4U-WM-uPI" firstAttribute="top" secondItem="hRu-2w-f7w" secondAttribute="top" constant="30" id="etj-nG-nfd"/>
+                            <constraint firstItem="i6r-VT-fnf" firstAttribute="centerY" secondItem="V4M-td-u6X" secondAttribute="centerY" id="jtm-EV-Yrc"/>
                             <constraint firstItem="hRu-2w-f7w" firstAttribute="trailing" secondItem="t4U-WM-uPI" secondAttribute="trailing" constant="15" id="rCW-m5-oi7"/>
                             <constraint firstItem="t4U-WM-uPI" firstAttribute="leading" secondItem="hRu-2w-f7w" secondAttribute="leading" constant="15" id="rEU-UG-XbD"/>
+                            <constraint firstItem="i6r-VT-fnf" firstAttribute="centerX" secondItem="V4M-td-u6X" secondAttribute="centerX" id="rec-WV-E1H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hRu-2w-f7w"/>
                     </view>
@@ -149,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgh-5E-3C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="-30"/>
+            <point key="canvasLocation" x="1533.5999999999999" y="-30.134932533733135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aY4-GD-sw1">
@@ -187,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="708.79999999999995" y="-30.584707646176913"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="dFG-7K-800">
             <objects>
-                <viewController id="XgS-CM-p3k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="XgS-CM-p3k" customClass="DetailViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Eq-C1-ZwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

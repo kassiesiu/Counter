@@ -11,8 +11,10 @@ import CoreData
 
 class ViewController: UITableViewController {
 
+    // MARK: Properties
     var counters : [Counters] = []
     
+    //MARK: Default Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,15 +30,23 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        // get data from core data
-        getData()
-        
-        //reload table
-        tableView.reloadData()
+    // MARK: My Methods
+    override func viewWillAppear(_ animated: Bool) { // what to do before the view appears: refresh to see if data is different
+        getData() // get data from core data
+        tableView.reloadData() // reload table
     }
     
-    // MARK: SET UP CELLS
+    func getData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        do {
+            counters = try context.fetch(Counters.fetchRequest())
+        } catch {
+            print("Fetching failed")
+        }
+    }
+    
+    // MARK: My Methods - Set Up Cells
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return counters.count
     }
@@ -55,17 +65,7 @@ class ViewController: UITableViewController {
         
     }
     
-    func getData() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        do {
-            counters = try context.fetch(Counters.fetchRequest())
-        } catch {
-            print("Fetching failed")
-        }
-    }
-    
-    // MARK: EDIT CELLS
+    // MARK: My Methods - Edit Cells
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -73,7 +73,6 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             // delete
-            print("Delete")
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             
             let commit = counters[indexPath.row]
@@ -88,7 +87,11 @@ class ViewController: UITableViewController {
         }
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
 }
 
