@@ -14,7 +14,7 @@
 		C309D91320ABF9F100982658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C309D91120ABF9F100982658 /* LaunchScreen.storyboard */; };
 		C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91A20ABFA4400982658 /* AddCounterViewController.swift */; };
 		C309D91D20ABFAF900982658 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D91C20ABFAF900982658 /* CounterTableViewCell.swift */; };
-		C309D92420AC07AA00982658 /* Counters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C309D92220AC07AA00982658 /* Counters.xcdatamodeld */; };
+		C309D92420AC07AA00982658 /* Counter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C309D92220AC07AA00982658 /* Counter.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +61,7 @@
 		C309D90720ABF9F100982658 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				C309D92220AC07AA00982658 /* Counter.xcdatamodeld */,
 				C309D90820ABF9F100982658 /* AppDelegate.swift */,
 				C309D90A20ABF9F100982658 /* ViewController.swift */,
 				C309D90C20ABF9F100982658 /* Main.storyboard */,
@@ -76,7 +77,6 @@
 		C309D91E20AC03CF00982658 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				C309D92220AC07AA00982658 /* Counters.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 				C309D90B20ABF9F100982658 /* ViewController.swift in Sources */,
 				C309D91B20ABFA4400982658 /* AddCounterViewController.swift in Sources */,
 				C309D90920ABF9F100982658 /* AppDelegate.swift in Sources */,
-				C309D92420AC07AA00982658 /* Counters.xcdatamodeld in Sources */,
+				C309D92420AC07AA00982658 /* Counter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,13 +342,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C309D92220AC07AA00982658 /* Counters.xcdatamodeld */ = {
+		C309D92220AC07AA00982658 /* Counter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C309D92320AC07AA00982658 /* Counters.xcdatamodel */,
 			);
 			currentVersion = C309D92320AC07AA00982658 /* Counters.xcdatamodel */;
-			path = Counters.xcdatamodeld;
+			path = Counter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

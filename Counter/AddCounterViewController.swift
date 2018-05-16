@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddCounterViewController: UIViewController {
     
@@ -44,6 +45,20 @@ class AddCounterViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
+//        let appDelegate = (UIApplication.shared.delegate as! AppDelegate).persist
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+//        let counterItem = Counters(context: context)
+        let counterItem = Counters(context: context)
+//
+        counterItem.name = nameText.text!
+////        counterItem.desc = descText.text?
+////        counterItem.counter = countText.text!
+//
+        print("Pressed")
+        appDelegate.saveContext()
+        self.dismiss(animated: true, completion: nil)
     }
     
 
