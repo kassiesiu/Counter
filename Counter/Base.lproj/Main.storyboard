@@ -112,6 +112,13 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-VT-fnf">
+                                <rect key="frame" x="156" y="304" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -137,6 +144,7 @@
                         <outlet property="countText" destination="k4B-4e-F50" id="vGd-VE-fgC"/>
                         <outlet property="descText" destination="tKB-aK-97E" id="v6G-zU-shi"/>
                         <outlet property="nameText" destination="8Yp-gk-4ON" id="wLq-kR-B8C"/>
+                        <outlet property="saveButton" destination="RBN-j0-V7A" id="Q94-iM-blf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgh-5E-3C6" userLabel="First Responder" sceneMemberID="firstResponder"/>

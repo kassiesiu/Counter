@@ -61,7 +61,6 @@
 		C309D90720ABF9F100982658 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				C309D92220AC07AA00982658 /* Counter.xcdatamodeld */,
 				C309D90820ABF9F100982658 /* AppDelegate.swift */,
 				C309D90A20ABF9F100982658 /* ViewController.swift */,
 				C309D90C20ABF9F100982658 /* Main.storyboard */,
@@ -77,6 +76,7 @@
 		C309D91E20AC03CF00982658 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				C309D92220AC07AA00982658 /* Counter.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -295,9 +295,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9497Q93C79;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Counter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Counter123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,9 +311,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9497Q93C79;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Counter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Counter123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
