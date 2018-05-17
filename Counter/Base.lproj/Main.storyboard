@@ -111,7 +111,6 @@
                                             <segment title="1"/>
                                             <segment title="10"/>
                                             <segment title="100"/>
-                                            <segment title="1000"/>
                                         </segments>
                                         <connections>
                                             <action selector="stepValueDecider:" destination="8TD-hx-fBs" eventType="valueChanged" id="Ezx-w6-dhv"/>

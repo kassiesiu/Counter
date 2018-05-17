@@ -37,6 +37,7 @@ class AddCounterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         stepper.autorepeat = true
+        stepper.maximumValue = 1000
         
         // MARK: How to enable/disable button
         // 1. Set button to isEnabled false
@@ -83,16 +84,20 @@ class AddCounterViewController: UIViewController {
 //            count = count + (stepp - count)
 //            countLabel.text = String(count)
 //        } else {
-//            print("sdjf")
 //            countLabel.text = Int(sender.value).description
 //        }
         
-        if (stepp != 1) {            
+        if (stepp != 1) {
             count = count/stepp
             count = count * stepp
-            
         }
-        countLabel.text = String(count)
+        
+        if (count == 1000) {
+            countLabel.text = "1K"
+        } else {
+            countLabel.text = String(count)
+        }
+        
     }
     
     
@@ -104,8 +109,6 @@ class AddCounterViewController: UIViewController {
             stepper.stepValue = 10
         case 2:
             stepper.stepValue = 100
-        case 3:
-            stepper.stepValue = 1000
         default:
             break;
         }
