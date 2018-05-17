@@ -14,8 +14,6 @@ class AddCounterViewController: UIViewController {
     // MARK: Properties
     
     var count = 0
-    var pickerData: [String] = [String]()
-//    var textFields = [UITextField]()
     
     @IBOutlet weak var nameText: UITextField! {
         didSet {
@@ -30,8 +28,7 @@ class AddCounterViewController: UIViewController {
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var stepper: UIStepper!
-    @IBOutlet weak var incDecPicker: UIPickerView!
-    
+    @IBOutlet weak var stepValuePicker: UISegmentedControl!
 
 
     override func viewDidLoad() {
@@ -41,16 +38,12 @@ class AddCounterViewController: UIViewController {
         
         stepper.autorepeat = true
         
-        pickerData = ["Increasing", "Decreasing"]
-
-        
         // MARK: How to enable/disable button
         // 1. Set button to isEnabled false
         // 2. addTargets
         // 3. make textFieldDidChange func
         saveButton.isEnabled = false // disable save button until fields have something in it
         nameText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//        countText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
     }
     
@@ -83,12 +76,40 @@ class AddCounterViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func stepperChanged(_ sender: UIStepper) {
-        countLabel.text = Int(sender.value).description
+        var count: Int = Int(sender.value)
+        let stepp: Int = Int(stepper.stepValue)
+//        if Int(count) % stepp != 0, Int(count) / stepp != 1 {
+//            count = count + (stepp - count)
+//            countLabel.text = String(count)
+//        } else {
+//            print("sdjf")
+//            countLabel.text = Int(sender.value).description
+//        }
+        
+        if (stepp != 1) {            
+            count = count/stepp
+            count = count * stepp
+            
+        }
+        countLabel.text = String(count)
     }
     
-
+    
+    @IBAction func stepValueDecider(_ sender: UISegmentedControl) {
+        switch stepValuePicker.selectedSegmentIndex {
+        case 0:
+            stepper.stepValue = 1
+        case 1:
+            stepper.stepValue = 10
+        case 2:
+            stepper.stepValue = 100
+        case 3:
+            stepper.stepValue = 1000
+        default:
+            break;
+        }
+    }
 
 }
 
