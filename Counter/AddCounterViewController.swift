@@ -39,7 +39,6 @@ class AddCounterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        stepper.wraps = true
         stepper.autorepeat = true
         
         pickerData = ["Increasing", "Decreasing"]
@@ -102,8 +101,12 @@ extension UITextField {
         self.layer.borderWidth = 1
         
         // padding
-        let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 20.0, height: 0.0))
+        let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 15.0, height: 15.0))
+        self.rightView = leftView
         self.leftView = leftView
         self.leftViewMode = .always
+        self.rightViewMode = .always
+        
+        
     }
 }
