@@ -60,6 +60,11 @@ class ViewController: UITableViewController {
         let counter = counters[indexPath.row]
         cell.nameLabel.text = counter.name!
         cell.countLabel.text = String(counter.count)
+        if let desc = counter.desc {
+            cell.descLabel.text = desc
+        } else {
+            cell.descLabel.text = ""
+        }
 
         return cell
         

@@ -9,12 +9,9 @@
 import UIKit
 import CoreData
 
-class AddCounterViewController: UIViewController {
+class AddCounterViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
-    
-    var count = 0
-    
     @IBOutlet weak var nameText: UITextField! {
         didSet {
             nameText.textFieldPreferences()
@@ -35,6 +32,10 @@ class AddCounterViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // set up delegates
+        nameText.delegate = self
+        descText.delegate = self
         
         stepper.autorepeat = true
         stepper.maximumValue = 1000
@@ -72,14 +73,17 @@ class AddCounterViewController: UIViewController {
         
         counterItem.name = nameText.text
         counterItem.count = Int64(countLabel.text!)!
+        if let desc = descText.text {
+            counterItem.desc = desc
+        }
         
         appDelegate.saveContext()
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func stepperChanged(_ sender: UIStepper) {
-        var count: Int = Int(sender.value)
-        let stepp: Int = Int(sender.stepValue)
+        let count: Int = Int(sender.value)
+//        let stepp: Int = Int(sender.stepValue)
 //        if Int(count) % stepp != 0, Int(count) / stepp != 1 {
 //            count = count + (stepp - count)
 //            countLabel.text = String(count)
@@ -114,6 +118,12 @@ class AddCounterViewController: UIViewController {
         default:
             break;
         }
+    }
+    
+    // MARK: Text Field Stuff
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 }
