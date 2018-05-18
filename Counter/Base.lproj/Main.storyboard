@@ -195,7 +195,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aY4-GD-sw1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZQh-yl-cgd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="initialNavigator" automaticallyAdjustsScrollViewInsets="NO" id="ZQh-yl-cgd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yU9-OG-nhG">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -213,7 +213,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Bbw-FS-fBt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uc2-9L-eS7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="addNavigator" automaticallyAdjustsScrollViewInsets="NO" id="uc2-9L-eS7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xaa-Gs-njY">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -235,30 +235,7 @@
                     <view key="view" contentMode="scaleToFill" id="8Eq-C1-ZwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yws-De-lad">
-                                <rect key="frame" x="15" y="368" width="345" height="45"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-1o-2cS">
-                                <rect key="frame" x="15" y="337" width="345" height="104"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="yws-De-lad" firstAttribute="centerX" secondItem="8Eq-C1-ZwU" secondAttribute="centerX" id="5L2-XO-Xjh"/>
-                            <constraint firstItem="yws-De-lad" firstAttribute="leading" secondItem="Gbj-Yc-W9k" secondAttribute="leading" constant="15" id="Ozj-Dn-Ux2"/>
-                            <constraint firstItem="kr1-1o-2cS" firstAttribute="centerX" secondItem="8Eq-C1-ZwU" secondAttribute="centerX" id="XbA-eh-WEG"/>
-                            <constraint firstItem="kr1-1o-2cS" firstAttribute="leading" secondItem="Gbj-Yc-W9k" secondAttribute="leading" constant="15" id="dzA-ZD-Fbj"/>
-                            <constraint firstItem="kr1-1o-2cS" firstAttribute="centerY" secondItem="8Eq-C1-ZwU" secondAttribute="centerY" id="f1D-xK-ZZA"/>
-                            <constraint firstItem="Gbj-Yc-W9k" firstAttribute="trailing" secondItem="kr1-1o-2cS" secondAttribute="trailing" constant="15" id="yad-N0-hMW"/>
-                            <constraint firstItem="Gbj-Yc-W9k" firstAttribute="trailing" secondItem="yws-De-lad" secondAttribute="trailing" constant="15" id="zaH-Mu-Erk"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gbj-Yc-W9k"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oqz-eM-z2d"/>
@@ -270,7 +247,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qWi-NR-KhD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wuN-iD-bOP" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="detailNavigator" automaticallyAdjustsScrollViewInsets="NO" id="wuN-iD-bOP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="26h-3D-KlF">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

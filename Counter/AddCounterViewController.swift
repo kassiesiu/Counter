@@ -79,7 +79,7 @@ class AddCounterViewController: UIViewController {
     
     @IBAction func stepperChanged(_ sender: UIStepper) {
         var count: Int = Int(sender.value)
-        let stepp: Int = Int(stepper.stepValue)
+        let stepp: Int = Int(sender.stepValue)
 //        if Int(count) % stepp != 0, Int(count) / stepp != 1 {
 //            count = count + (stepp - count)
 //            countLabel.text = String(count)
@@ -87,12 +87,10 @@ class AddCounterViewController: UIViewController {
 //            countLabel.text = Int(sender.value).description
 //        }
         
-        print(count)
-        
-        if (stepp != 1) {
-            count = count/stepp
-            count = count * stepp
-        }
+//        if (stepp != 1) {
+//            count = count/stepp
+//            count = count * stepp
+//        }
         
         if (count == 1000) {
             countLabel.text = "1K"
@@ -100,7 +98,7 @@ class AddCounterViewController: UIViewController {
             countLabel.text = String(count)
         }
         
-        sender.value = Double(count)
+//        sender.value = Double(count)
         
     }
     
