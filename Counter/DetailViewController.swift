@@ -10,10 +10,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var countLabel: UILabel!
+    var receivedCount: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        if let finalCount = receivedCount {
+            countLabel.text = String(finalCount)
+        }
     }
 
     override func didReceiveMemoryWarning() {

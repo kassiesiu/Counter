@@ -94,6 +94,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            let counter = counters[indexPath.row]
+            vc.receivedCount = Int(counter.count)
             navigationController?.pushViewController(vc, animated: true)
         }
     }
