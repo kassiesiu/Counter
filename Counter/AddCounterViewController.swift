@@ -73,6 +73,7 @@ class AddCounterViewController: UIViewController, UITextFieldDelegate {
         
         counterItem.name = nameText.text
         counterItem.count = Int64(countLabel.text!)!
+        counterItem.stepValue = Int16(stepper.stepValue)
         if let desc = descText.text {
             counterItem.desc = desc
         }
